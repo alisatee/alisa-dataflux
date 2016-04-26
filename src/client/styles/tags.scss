@@ -1,0 +1,25 @@
+/*
+ * Copyright (C) 2015 by Looker Data Services, Inc.
+ * All rights reserved.
+ */
+
+a {
+    color: $color-blue-medium;
+    text-decoration: none;
+
+    &:active {
+        color: $color-blue-light;
+    }
+
+    &:hover {
+        text-decoration: underline;
+    }
+
+    &:visited {
+        color: $color-blue-dark;
+    }
+}
+
+button {
+    outline: none;
+}

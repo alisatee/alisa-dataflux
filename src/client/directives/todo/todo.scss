@@ -1,0 +1,76 @@
+/*
+ * Copyright (C) 2015 by Looker Data Services, Inc.
+ * All rights reserved.
+ */
+
+todo {
+  display: flex;
+
+  .checkbox {
+    flex: 0 0 auto;
+    height: 2rem;
+    width: 2rem;
+    margin-right: 0.5rem;
+
+    border: 1px solid $color-gray-medium;
+    color: $color-white;
+    text-align: center;
+
+    &:before {
+      content: "✓";
+      font-size: 2rem;
+      line-height: 2rem;
+    }
+
+    &:hover {
+      color: $color-gray-faint;
+    }
+
+    &.checked {
+      color: $color-black;
+
+      &:hover {
+        color: $color-black;
+      }
+    }
+  }
+
+  input {
+    flex: 1 1 100%;
+
+    border: 0;
+
+    font-family: $font-family-text;
+    font-size: 1.25rem;
+    padding: 0 0.5rem;
+
+    &.complete {
+      color: $color-gray-light;
+      text-decoration: line-through;
+    }
+
+    &.empty {
+      border-bottom: 1px dashed $color-gray-medium;
+    }
+  }
+
+  .delete {
+    flex: 0 0 auto;
+    height: 2rem;
+    width: 2rem;
+    margin-left: 0.5rem;
+
+    color: $color-gray-light;
+    text-align: center;
+
+    &:before {
+      content: "✕";
+      font-size: 2rem;
+      line-height: 2rem;
+    }
+
+    &:hover {
+      color: $color-gray-medium;
+    }
+  }
+}
