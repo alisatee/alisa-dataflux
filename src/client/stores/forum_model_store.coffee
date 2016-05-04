@@ -8,17 +8,7 @@ m.factory 'ForumModelStore', (
   Reflux.createStore
 
     init: ->
-
-    # listenables: CommentModelActions
-    # Public Methods
-
-    # get: (id)->
-    #   return CommentModel.get(id)?.toProxy() || null
-    #
-    # getByPostId: (id)->
-    #   ## Use the Post Store to get a post's comments
-    #   return
-
+      return 
     # Action Methods
 
     onCreate: (params = {})->
