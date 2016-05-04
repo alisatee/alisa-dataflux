@@ -7,3 +7,5 @@ m = module.exports = angular.module 'models', ['dataflux']
 
 require './model_proxy'
 require './todo_model'
+require './comment_model'
+require './post_model'

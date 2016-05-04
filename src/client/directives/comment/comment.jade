@@ -1,0 +1,9 @@
+.comment-body
+  span(ng-bind="comment.text")
+  
+.vote-count(ng-bind="comment.votes")
+
+.vote-up(ng-click="vote('up')")
+  | &#11014;
+.vote-down(ng-click="vote('down')")
+  | &#11015;

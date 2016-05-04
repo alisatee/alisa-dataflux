@@ -1,0 +1,25 @@
+comment {
+  border: .5px solid black;
+  border-radius: 5px;
+  margin-bottom: 3px;
+  display: flex;
+  flex-direction: row;
+  .comment-body {
+    padding: 10px;
+    width: 100%;
+  }
+
+  .vote-up, .vote-down {
+    padding-top: 5px;
+    float: right;
+    display: inline-block;
+    font-size: 22px;
+    &:hover {
+      color: #F62459;
+    }
+  }
+  .vote-count {
+    padding-top: 11px;
+    padding-right: 12px;
+  }
+}

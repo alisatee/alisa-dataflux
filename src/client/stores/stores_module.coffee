@@ -6,3 +6,5 @@
 m = module.exports = angular.module 'stores', ['dataflux', 'models']
 
 require './todo_model_store'
+require './post_model_store'
+require './comment_model_store'

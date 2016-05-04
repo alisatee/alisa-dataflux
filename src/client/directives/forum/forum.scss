@@ -1,0 +1,25 @@
+forum {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+
+  .post-controls {
+    width: 100%;
+    button {
+      float: right;
+    }
+  }
+  .new-topic {
+    margin-top: 5px;
+    align-self: center;;
+    width: 500px;
+
+    button {
+      float: right;
+    }
+  }
+  .all-topics {
+    width: 100%;
+    margin: 10px;
+  }
+}

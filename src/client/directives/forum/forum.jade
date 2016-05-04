@@ -1,0 +1,26 @@
+.post-controls
+  button.btn.btn-default(
+    ng-show="!showTopicTextarea"
+    ng-click="addPost()"
+  ) Create New Post 
+  
+.new-topic(ng-show="showTopicTextarea")
+  .form-group
+    input.form-control(
+      type="text"
+      ng-model="newPost.title"
+    )
+  .form-group
+    textarea.form-control(
+      type="text"
+      ng-model="newPost.body"
+    )
+  .form-group
+    button.btn.btn-default(ng-click="createPost()") Save
+
+.all-topics
+  .topic(ng-repeat="post in posts")      
+    .topic-closeup
+      post(
+        model-id="{{post.id}}"
+      )

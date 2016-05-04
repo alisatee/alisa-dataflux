@@ -1,0 +1,36 @@
+.post-title(
+  ng-class="{'active': expanded}"
+)
+  span.topic-text(
+    ng-bind="post.title"
+    ng-click="expandPost()"
+  )
+  span.delete-topic(ng-click="delete()")
+    | X 
+
+div(ng-if="expanded")
+  .post-content
+    .body(ng-bind="post.body")
+    .author(ng-bind="post.author")
+
+  .comment-controls
+    button.btn.btn-default.add-comment(ng-click="addComment()")
+      | Add Comment
+      
+  .create-comment(
+    ng-show="toggleCommentTextBox"
+  )
+    .form-group
+      textarea.form-control(
+        rows="2"
+        ng-model="comment.text"
+      )
+    .form-group
+      button.btn.btn-default(ng-click="createComment()") Add 
+  .clearfix    
+      
+  .comments
+    comment(
+      ng-repeat="comment in post.comments"
+      model-id="{{comment.id}}"
+    )
